@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh !important;
+    background-image: url("../../img/himsi.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    padding: 1.5rem;
+}
+
+.login {
+    background-color: #fff;
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.login h2 {
+    text-align: center;
+    margin: 0 0 20px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.login .group12 {
+    position: relative;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.login .group12 input {
+    height: 50px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.login .group12 span {
+    position: absolute;
+    text-transform: capitalize;
+    background-color: #fff;
+    top: -12px;
+    left: 20px;
+    font-weight: 600;
+    font-size: 12px;
+    background-color: lightblue;
+    padding: 2px 4px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.login .group12 input[type="submit"] {
+    background-color: lightblue;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.login .group12 input[type="submit"]:hover {
+    width: 100%;
+    background-color: rgb(115, 163, 179);
+}
+
+small.error {
+    text-align: left !important;
+    color: #fd3636;
+}
+
+@media (min-width: 500px) {
+    .login {
+        min-width: 350px;
+    }
+}
+
+@media (min-width: 768px) {
+    .login {
+        min-width: 450px;
+    }
+}

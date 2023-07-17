@@ -1,0 +1,325 @@
+:root {
+    --first-color: #923a2c;
+    /*--first-color: #DC3545; asli: 9D4BFF 23004D*/
+    --first-color-dark: #333;
+    --first-color-light: #a49eac;
+    --first-color-lighten: #f2f2f2;
+
+    --body-font: "Poppins", sans-serif;
+    --h1-font-size: 1.5rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem;
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        --normal-font-size: 0.938rem;
+        --small-font-size: 0.875rem;
+    }
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: var(--first-color-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ===== REGISTRASI ===== */
+
+.registrasi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.regis__content {
+    display: grid;
+}
+
+.regis__forms {
+    position: relative;
+    height: auto;
+}
+
+.regis__registre {
+    width: 600px;
+    background-color: var(--first-color-lighten);
+    padding: 5rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(35, 0, 77, 0.2);
+    bottom: 1rem;
+}
+
+.regis__title {
+    font-size: var(--h1-font-size);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.regis__box {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 0.5rem;
+    padding: 1.125rem 1rem;
+    background-color: #fff;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+}
+
+.regis__box__area,
+.regis__box__file {
+    padding: 1.5rem;
+    background-color: #fff;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+}
+
+.upload__box {
+    font-size: var(--small-font-size);
+    background: var(--first-color-lighten);
+    outline: none;
+    font-family: var(--body-font);
+    cursor: pointer;
+}
+
+::-webkit-file-upload-button {
+    color: #fff;
+    background: var(--first-color);
+    padding: 0.8rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    font-family: var(--body-font);
+    margin-right: 1rem;
+}
+
+::-webkit-file-upload-button:hover {
+    background: var(--first-color-dark);
+}
+
+::-moz-file-upload-button {
+    color: #fff;
+    background: var(--first-color);
+    padding: 0.8rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    font-family: var(--body-font);
+    margin-right: 1rem;
+}
+
+::-moz-file-upload-button:hover {
+    background: var(--first-color-dark);
+}
+
+textarea {
+    font-size: var(--normal-font-size);
+    font-weight: 400;
+    font-family: var(--body-font);
+    color: var(--first-color-dark);
+    display: flex;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.regis__icon {
+    font-size: 1.5rem;
+    color: var(--first-color);
+}
+
+.regis__input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: var(--normal-font-size);
+    font-weight: 400 !important;
+    font-family: var(--body-font);
+    color: var(--first-color-dark);
+}
+
+.regis__input::placeholder,
+input[type="date"] {
+    font-size: var(--normal-font-size);
+    font-family: var(--body-font);
+}
+
+.regis__button {
+    display: block;
+    padding: 1rem;
+    margin: 2rem 0;
+    background-color: var(--first-color);
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    width: 100%;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: var(--normal-font-size);
+}
+
+.regis__button:hover {
+    background: var(--first-color-dark);
+}
+
+input[type="date"]:before {
+    content: attr(placeholder);
+}
+
+/* ===== INPUT HINT ===== */
+.input-hint {
+    display: block;
+    margin-top: 1rem;
+}
+
+/* ===== TAG LINE ===== */
+
+.tagline {
+    height: 0;
+    border-top: 1px solid #d9dde5;
+    text-align: center;
+    margin: 1rem 0rem 0rem 0rem;
+}
+
+.tagline span {
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    padding: 0 15px;
+    background: #f2f2f2;
+    color: #9d9fa3;
+    top: -10px;
+}
+
+.form-controls {
+    display: block;
+    width: 100%;
+    /* padding: 0.375rem 0.75rem; */
+    font-size: 1rem;
+    font-weight: 400 !important;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s;
+}
+.form-control:disabled,
+.form-control[readonly] {
+    background-color: unset !important;
+    opacity: 1;
+}
+
+.faq__section a {
+    color: var(--first-color-lighten);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+}
+
+.faq__section {
+    width: 50px;
+    height: 150px;
+    border-radius: 0 10px 10px 0;
+    background-color: var(--first-color);
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    /*padding-right: 10px;*/
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.5s;
+    cursor: pointer;
+    animation: bounce 1s infinite;
+    position: fixed;
+}
+
+.faq__section:hover {
+    background-color: var(--first-color-dark);
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+@media (max-width: 600px) {
+    .regis__registre {
+        padding: 3rem 1.5rem;
+        width: 80vw;
+    }
+    .upload__box {
+        width: 100%;
+    }
+}
+
+input[type="text"].form-control,
+input[type="email"].form-control,
+input[type="password"].form-control,
+input[type="date"].form-control {
+    padding: 0;
+    width: 100%;
+}
+
+.form-select {
+    width: 100%;
+}
+
+.upload__box {
+    border-radius: 0.5rem !important;
+    margin: 0 0 1.5rem 0;
+    overflow: auto;
+    word-wrap: break-word;
+}
+
+input[type="file"].desktop {
+    width: 100%;
+}
+
+@media (min-width: 250px) and (max-width: 500px) {
+    input[type="file"].desktop {
+        margin-bottom: 0.6rem;
+        width: 100%;
+    }
+
+    ::-webkit-file-upload-button {
+        margin-right: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    ::-webkit-file-upload-button:hover {
+        background: var(--first-color-dark);
+    }
+}

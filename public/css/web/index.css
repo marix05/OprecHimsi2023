@@ -1,0 +1,75 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+.middle2 {
+    position: absolute !important;
+    top: -25% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    text-align: center !important;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+
+body {
+    background-image: url("../../img/himsi.jpg");
+    background-position: cover;
+}
+
+#content {
+    height: 100vh !important;
+}
+
+.button {
+    display: inline-block !important;
+    background: #923a2c !important;
+    color: #fff !important;
+    padding: 1.5rem !important;
+    border-radius: 0.5rem !important;
+    font-weight: bold !important;
+    margin: 10px !important;
+    font-size: 2rem !important;
+    transition: 0.5s !important;
+}
+
+.button:hover {
+    background-color: #333 !important;
+}
+
+.button__icon {
+    font-size: 2rem !important;
+    margin-left: 0.5rem !important;
+    transition: 0.3s !important;
+}
+
+.button--flex {
+    display: inline-flex !important;
+    align-items: center !important;
+}
+a {
+    text-decoration: none !important;
+}
+a:hover {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+@media (max-width: 600px) {
+    .page-deco {
+        right: 50% !important;
+        top: 90% !important;
+        transform: rotate(0) translateX(50%) !important;
+    }
+    /*.countdown, #countdown {*/
+    /*    font-size: 15px;*/
+    /*}*/
+}
+
+.countdown,
+#countdown {
+    font-family: Poppins !important;
+}
